@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechService Pro - Support Informatique pour Professionnels</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+        }
+
+        /* Header */
+        header {
+            background: #004a99;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        /* Navigation */
+        nav {
+            background: #333;
+            padding: 1rem;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 1rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        /* Sections */
+        section {
+            padding: 4rem 2rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            color: #004a99;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        /* Services Grid */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .service-card {
+            background: #f4f4f4;
+            padding: 2rem;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        /* Emergency Section */
+        .emergency {
+            background: #dc3545;
+            color: white;
+            text-align: center;
+            padding: 3rem;
+        }
+
+        .emergency button {
+            background: white;
+            color: #dc3545;
+            border: none;
+            padding: 1rem 2rem;
+            font-size: 1.2rem;
+            margin-top: 1rem;
+            cursor: pointer;
+        }
+
+        /* Contact */
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        /* Footer */
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                text-align: center;
+            }
+            nav ul li {
+                margin: 0.5rem 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>TechService Pro</h1>
+        <p>Support informatique 24h/24 pour professionnels de l'hôtellerie et restauration</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#urgence">Urgence</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="services">
+        <div class="container">
+            <h2>Nos Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Support Technique</h3>
+                    <p>Maintenance préventive et corrective de vos systèmes informatiques</p>
+                </div>
+                <div class="service-card">
+                    <h3>Sécurité Réseau</h3>
+                    <p>Configuration et protection de vos infrastructures réseau</p>
+                </div>
+                <div class="service-card">
+                    <h3>Cloud & Sauvegarde</h3>
+                    <p>Solutions de stockage sécurisé et sauvegarde automatique</p>
+                </div>
+                <div class="service-card">
+                    <h3>Formation</h3>
+                    <p>Formation personnalisée pour votre personnel</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="emergency" id="urgence">
+        <div class="container">
+            <h2>Urgence Informatique ?</h2>
+            <p>Intervention rapide 24h/24 - 7j/7</p>
+            <button>Appel d'urgence</button>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Rapide</h2>
+            <form class="contact-form">
+                <input type="text" placeholder="Nom" required>
+                <input type="email" placeholder="Email" required>
+                <input type="tel" placeholder="Téléphone">
+                <textarea placeholder="Message" rows="5" required></textarea>
+                <button type="submit">Envoyer</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2023 TechService Pro - Assistance informatique pour professionnels</p>
+        <p>Disponible 24h/24 - 7j/7</p>
+    </footer>
+</body>
+</html>
